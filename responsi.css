@@ -1,0 +1,226 @@
+:root{
+    --skyblue:#87CEEB;
+}
+
+*{
+    font-family: times-new-roman;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--skyblue);
+    color:#333;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--skyblue);
+}
+
+body{
+    background:url(bg3.jpg);
+    overflow-x: hidden;
+    padding-left: 350px;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.btn{
+    padding:.7rem 3rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background:var(--skyblue);
+}
+
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+
+.heading span{
+    color:var(--skyblue);
+}
+
+header{
+    position: fixed;
+    top:0;left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background:#87CEEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .profile .name{
+    font-size: 35px;
+    color:white;
+}
+
+header .menu{
+    width:100%;
+}
+
+header .menu ul{
+    list-style: none;
+    padding:20px 40px;
+}
+
+
+header .menu ul li a{
+    display: block;
+    padding:10px;
+    margin:15px 0;
+    background:#333;
+    color:white;
+    font-size: 20px;
+    border-radius: 40px;
+}
+
+header .menu ul li a:hover{
+    background:var(--skyblue);
+}
+header footer h3{
+    color: white;
+    font-size: 15px;
+}
+#menu{
+    position: fixed;
+    top: 20px;
+    right: 20px;;
+    background:#333;
+    color:white;
+    cursor: pointer;
+    font-size: 25px;
+    padding:10px 15px;
+    z-index: 1000;
+    display: none;
+}
+
+.beranda{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 150px;
+}
+
+.beranda h2{
+    font-size: 50px;
+    color:white;
+}
+
+.beranda h3{
+    font-size:35px;
+    color:white;
+}
+
+.beranda h3 span{
+    color:var(--skyblue);
+}
+
+.beranda p{
+    font-size: 20px;
+    color:white;
+    padding: 10px 0;
+}
+
+.hubungi .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hubungi .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+}
+.hubungi .row .content .title{
+    text-transform: uppercase;
+    color:white;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.hubungi .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:white;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.produk .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+
+.produk .container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.produk .container .box span{
+    font-size: 1.3rem;
+    background:var(--skyblue);
+    color:#000;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.produk .container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+
